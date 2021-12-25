@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立体呈现</title>
+    <style>
+        .cube {
+            float: left;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            /* background-color: pink;*/
+            transition: all 1s;
+            transform-style: preserve-3d;
+            animation: move 1s infinite linear alternate;
+        }
+        
+        .cube div {
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+        }
+        /*1*/
+        
+        .front {
+            background-image: url(./images/dog.gif);
+            /* 向我走近200px */
+            transform: translateZ(200px);
+        }
+        
+        .back {
+            background-image: url(./images/dog.gif);
+            background-position: right 0px;
+        }
+        
+        .YOU {
+            background-image: url(./images/dog.gif);
+            background-position: right 0px;
+            transform: translateZ(100px) translateX(-100px) rotateY(-90deg);
+        }
+        /* cube hover 为了看空间感效果 */
+        
+        .z {
+            background-image: url(./images/dog.gif);
+            transform: translateZ(100px) translateX(100px)rotateY(-90deg);
+        }
+        
+        .s {
+            background-image: url(./images/dog.gif);
+            background-position: right 0px;
+            transform: translateZ(100px) translateY(-100PX) rotateX(90deg);
+        }
+        
+        .x {
+            background-image: url(./images/dog.gif);
+            transform: translateZ(100px) translateY(100PX) rotateX(90deg);
+        }
+        
+        @keyframes move {
+            to {
+                transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+            }
+        }
+        
+        .cube:hover {
+            animation-play-state: paused;
+            /*transform: rotateY(360deg) rotateX(360deg);*/
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+        <div class="cube">
+            <div class="front">前面</div>
+            <div class="back">后面</div>
+            <div class="YOU">右面</div>
+            <div class="z">左面</div>
+            <div class="s">上面</div>
+            <div class="x">下面</div>
+        </div>
+    </ul>
+</body>
+
+</html>
